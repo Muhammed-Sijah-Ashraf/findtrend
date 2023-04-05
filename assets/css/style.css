@@ -1,0 +1,1261 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Inter-Regular";
+    font-size: 17px;
+    color: #0b0a0a;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+        url("../fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter-Black";
+    src: url("../fonts/Inter-Black.woff2") format("woff2"),
+        url("../fonts/Inter-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+        url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter-Light";
+    src: url("../fonts/Inter-Light.woff2") format("woff2"),
+        url("../fonts/Inter-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+        url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+        url("../fonts/Inter-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+input,
+textarea,
+select {
+    font-family: "Inter-Regular";
+    font-weight: 500;
+}
+
+a {
+    color: #0b0a0a;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "Inter-Regular";
+    font-weight: 500;
+    color: #0b0a0a;
+}
+
+.hidden {
+    display: none;
+}
+
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 78px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.button {
+    background: #a6ff34;
+    color: #0b0a0a !important;
+    font-family: "Inter-Medium";
+    border-radius: 30px;
+}
+
+.no_margin {
+    margin-right: 0 !important;
+}
+
+.register_button {
+    padding: 10px 25px;
+    background: #fff;
+    color: #0b0a0a !important;
+    font-family: "Inter-Medium";
+    border-radius: 30px;
+}
+/* default styles end here */
+
+#spotlight_container {
+    background: url("../images/spot light.jpg") no-repeat;
+    background-size: cover;
+}
+#spotlight_container header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 60px;
+}
+#spotlight_container header h1 {
+    display: block;
+    width: 200px;
+}
+#spotlight_container header h1 img {
+    display: block;
+    width: 100%;
+}
+#spotlight_container header div a {
+    color: #e8e8e8;
+    margin-right: 25px;
+    font-size: 16px;
+}
+#spotlight_container #spotlight {
+    text-align: center;
+}
+#spotlight_container #spotlight h4 {
+    color: #fff;
+    font-size: 50px;
+    font-family: "Inter-Bold";
+    margin-bottom: 50px;
+    line-height: 1.8cm;
+}
+#spotlight_container #spotlight p {
+    color: #60625d;
+    font-size: 15px;
+    width: 500px;
+    margin: 0 auto 50px;
+}
+#spotlight_container #spotlight div.spotlight_middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+    gap: 5px;
+}
+#spotlight_container #spotlight div.spotlight_middle a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    font-family: "Inter-Bold";
+}
+#spotlight_container #spotlight div.spotlight_middle a div {
+    margin-bottom: 0;
+}
+#spotlight_container
+    #spotlight
+    div.spotlight_middle
+    div.spotlight_middle_right {
+    position: absolute;
+    width: 100px;
+    top: -30px;
+    right: 340px;
+}
+#spotlight_container #spotlight div.spotlight_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 200px;
+}
+#spotlight_container #spotlight div.spotlight_bottom div {
+    width: 250px;
+}
+#spotlight_container #spotlight div.spotlight_bottom div img {
+    height: 65px;
+}
+#spotlight_container #spotlight div.spotlight_bottom div.twitter {
+    position: absolute;
+    transform: rotate(-15deg);
+    left: 175px;
+    top: 3px;
+    z-index: 1;
+}
+#spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+    position: absolute;
+    left: 373px;
+    top: 24px;
+}
+#spotlight_container #spotlight div.spotlight_bottom div.facebook {
+    position: absolute;
+    transform: rotate(-3deg);
+    right: 400px;
+    top: -25px;
+}
+#spotlight_container #spotlight div.spotlight_bottom div.dribble {
+    position: absolute;
+    transform: rotate(4deg);
+    left: 780px;
+    top: 25px;
+}
+/* #spotlight styles ends */
+
+#tab {
+    background: #a6ff34;
+    padding: 80px;
+    text-align: center;
+    border-top: 2px solid #fff;
+}
+#tab h4 {
+    font-family: "Inter-Bold";
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+#tab div.tab_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 10px;
+}
+#tab div.tab_center div.quote {
+    margin: 10px;
+    width: 90px;
+}
+#tab div.tab_center div.quote img {
+    filter: invert(1);
+}
+#tab div.tab_center div.tab_middle {
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+}
+#tab div.tab_center div.tab_middle div.tab_searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 10px;
+}
+#tab div.tab_center div.tab_middle div.tab_searchbar div.searchbar_logo {
+    width: 125px;
+}
+#tab div.tab_center div.tab_middle div.tab_searchbar p {
+    font-family: "Inter-Medium";
+    background: #60625d;
+    background: linear-gradient(to right, #60625d 15%, #000 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#tab div.tab_center div.tab_middle div.tab_searchbar div.searchbar_icon {
+    width: 15px;
+}
+#tab span {
+    color: #60625d;
+    font-size: 15px;
+    line-height: 0.6cm;
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+/* #tab styles ends */
+
+#startup {
+    padding-top: 80px;
+}
+#startup h4 {
+    font-family: "Inter-Bold";
+    font-size: 50px;
+    width: 1000px;
+    margin-bottom: 200px;
+}
+#startup h4 span {
+    color: #60625d;
+}
+#startup h3 {
+    font-family: "Inter-Bold";
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#startup ul {
+    width: 90%;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+#startup ul li {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 25px 50px;
+}
+/* #startup styles ends */
+
+#social {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 100px 0;
+}
+#social section.social_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#social section.social_container h4 {
+    font-family: "Inter-Bold";
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+#social section.social_container ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+#social section.social_container ul li {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+#social section.social_container ul li:hover {
+    background: #a6ff34;
+}
+#social section.social_container div.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#social section.social_container div.posts div.post {
+    margin-bottom: 40px;
+    width: 68%;
+}
+#social section.social_container a.register_button {
+    color: #fff !important;
+    background: #000;
+    padding: 20px 40px;
+}
+/* #social styles ends */
+
+#pricing {
+    background: #000;
+    padding: 80px 0;
+    text-align: center;
+}
+#pricing h4 {
+    font-family: "Inter-Bold";
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+#pricing div.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#pricing div.selector p {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 20px;
+}
+#pricing div.selector div.circle_container {
+    background: #fff;
+    padding: 4px 30px 4px 4px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+#pricing div.selector div.circle_container div.circle {
+    padding: 15px;
+    background: #a6ff34;
+    border-radius: 50px;
+}
+#pricing div.selector span {
+    font-size: 13px;
+    color: #60625d;
+}
+#pricing div.selector div.arrow {
+    margin-left: 20px;
+    width: 6%;
+}
+#pricing ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#pricing ul li {
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: left;
+}
+#pricing ul li h3 {
+    font-family: "Inter-Bold";
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#pricing ul li p {
+    margin-bottom: 15px;
+}
+#pricing ul li hr {
+    width: 100%;
+    height: 1px;
+    background: #60625d;
+    margin-bottom: 10px;
+    opacity: 0.3;
+}
+#pricing ul li h2 {
+    font-family: "Inter-Bold";
+    font-size: 60px;
+    margin: 30px 0 20px 0;
+}
+#pricing ul li h2 span {
+    font-size: 16px;
+    font-family: "Inter-Regular";
+}
+#pricing ul li div.details {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#pricing ul li div.details div.tick {
+    margin-right: 10px;
+    width: 15px;
+}
+#pricing ul li div.details p {
+    margin: 0;
+}
+#pricing ul li button {
+    padding: 8px 30px;
+    background: #a6ff34;
+    border-radius: 20px;
+    font-family: "Inter-Bold";
+    text-align: center !important;
+    display: block;
+    width: 80%;
+    margin: 100px auto 0;
+    cursor: pointer;
+}
+#pricing ul li:hover {
+    background: #a6ff34;
+}
+#pricing ul li:hover button {
+    background: #000;
+    color: #fff;
+}
+/* #pricing styles ends */
+
+footer section.top {
+    background: #a6ff34;
+    padding: 100px;
+    text-align: center;
+}
+footer section.top h4 {
+    font-family: "Inter-Bold";
+    font-size: 50px;
+    width: 550px;
+    margin: 0 auto 80px;
+}
+footer section.top h4 span {
+    color: #88e90a;
+}
+footer section.top a.register_button {
+    color: #fff !important;
+    background: #000;
+    padding: 20px 40px;
+}
+footer section.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+footer section.bottom div {
+    width: 150px;
+}
+footer section.bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+/* footer styles ends */
+@media all and (max-width: 1280px) {
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        left: 189px;
+        top: -1px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        right: 330px;
+        top: -30px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 800px;
+        top: 25px;
+    }
+}
+@media all and (max-width: 1180px) {
+    #spotlight_container
+        #spotlight
+        div.spotlight_middle
+        div.spotlight_middle_right {
+        right: 275px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        left: 91px;
+        top: -1px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+        left: 294px;
+        top: 24px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        right: 320px;
+        top: -30px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 704px;
+        top: 25px;
+    }
+}
+@media all and (max-width: 980px) {
+    #spotlight_container
+        #spotlight
+        div.spotlight_middle
+        div.spotlight_middle_right {
+        right: 185px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        left: 50px;
+        top: -1px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+        left: 240px;
+        top: 24px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        right: 210px;
+        top: -30px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 610px;
+        top: 25px;
+    }
+    #startup h4 {
+        font-size: 39px;
+        width: 90%;
+        margin-bottom: 90px;
+    }
+    #startup h3 {
+        font-size: 46px;
+    }
+    #social section.social_container h4 {
+        font-size: 46px;
+    }
+    #social section.social_container ul li {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media all and (max-width: 768px) {
+    header div.header_middle {
+        display: none;
+    }
+    #spotlight_container #spotlight h4 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        line-height: 1.5cm;
+    }
+    #spotlight_container #spotlight p {
+        font-size: 13px;
+        width: 427px;
+        margin: 0 auto 50px;
+    }
+    #spotlight_container #spotlight div.spotlight_middle a {
+        height: 50px;
+        width: 175px;
+    }
+    #spotlight_container
+        #spotlight
+        div.spotlight_middle
+        div.spotlight_middle_right {
+        right: 115px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        transform: rotate(0deg);
+        left: 0px;
+        top: -32px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+        transform: rotate(0deg);
+        left: 97px;
+        top: 50px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        transform: rotate(0deg);
+        right: 114px;
+        top: -32px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        transform: rotate(0deg);
+        left: 422px;
+        top: 50px;
+    }
+    #tab h4 {
+        font-size: 40px;
+    }
+    #tab div.tab_center div.tab_middle {
+        padding: 35px;
+    }
+    #startup h4 {
+        font-size: 31px;
+        margin-bottom: 80px;
+    }
+    #startup h3 {
+        font-size: 31px;
+    }
+    #startup ul li {
+        padding: 20px;
+    }
+    #social section.social_container h4 {
+        font-size: 31px;
+    }
+    #social section.social_container ul li {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+    }
+    #social section.social_container a.register_button {
+        padding: 15px 30px;
+    }
+    #pricing h4 {
+        font-size: 40px;
+    }
+    #pricing ul li {
+        padding: 15px 15px;
+    }
+    #pricing ul li h3 {
+        font-size: 20px;
+    }
+    #pricing ul li p {
+        font-size: 13px;
+    }
+    #pricing ul li h2 {
+        font-size: 40px;
+    }
+    #pricing ul li h2 span {
+        font-size: 13px;
+    }
+    #pricing ul li div.details div.tick {
+        margin-right: 5px;
+        width: 12px;
+    }
+    #pricing ul li div.details p {
+        font-size: 12px;
+    }
+    #pricing ul li button {
+        margin: 50px auto 0;
+    }
+    footer section.top h4 {
+        font-size: 40px;
+        width: 450px;
+        margin: 0 auto 50px;
+    }
+    footer section.top a.register_button {
+        padding: 15px 30px;
+    }
+}
+@media all and (max-width: 640px) {
+    #spotlight_container header h1 {
+        width: 150px;
+    }
+    #spotlight_container header div a {
+        font-size: 13px;
+    }
+    #spotlight_container #spotlight h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 1.4cm;
+    }
+    #spotlight_container #spotlight p {
+        font-size: 12px;
+        width: 350px;
+        margin: 0 auto 50px;
+    }
+    #spotlight_container #spotlight div.spotlight_middle a {
+        height: 45px;
+        width: 155px;
+        font-size: 15px;
+    }
+    #spotlight_container
+        #spotlight
+        div.spotlight_middle
+        div.spotlight_middle_right {
+        right: 95px;
+        width: 70px;
+        top: -16px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        left: 69px;
+        top: -50px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+        left: 70px;
+        top: 43px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        right: 80px;
+        top: -5px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 246px;
+        top: 92px;
+    }
+    #tab {
+        padding: 50px;
+    }
+    #tab h4 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #tab div.tab_center {
+        margin-bottom: 50px;
+    }
+    #tab div.tab_center div.quote {
+        margin: 0px;
+        width: 60px;
+    }
+    #tab div.tab_center div.tab_middle {
+        padding: 25px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar div.searchbar_logo {
+        width: 80px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar p {
+        font-size: 12px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar div.searchbar_icon {
+        width: 10px;
+    }
+    #tab span {
+        font-size: 12px;
+        line-height: 0.5cm;
+        width: 423px;
+    }
+    #startup h4 {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+    #startup h3 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    #startup ul li {
+        padding: 20px;
+    }
+    #startup ul {
+        margin: 0 auto 60px;
+    }
+    #social {
+        padding: 50px 0;
+    }
+    #social section.social_container h4 {
+        font-size: 30px;
+    }
+    #social section.social_container ul li {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    #social section.social_container a.register_button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    #pricing h4 {
+        font-size: 30px;
+    }
+    #pricing div.selector div.circle_container {
+        padding: 4px 25px 4px 4px;
+    }
+    #pricing div.selector div.circle_container div.circle {
+        padding: 10px;
+    }
+    #pricing ul {
+        gap: 20px;
+    }
+    #pricing ul li {
+        padding: 15px;
+    }
+    #pricing ul li h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #pricing ul li p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    #pricing ul li h2 {
+        font-size: 35px;
+        margin: 20px 0 15px 0;
+    }
+    #pricing ul li h2 span {
+        font-size: 12px;
+    }
+    #pricing ul li div.details div.tick {
+        margin-right: 5px;
+        width: 11px;
+    }
+    #pricing ul li div.details p {
+        font-size: 10px;
+    }
+    #pricing ul li button {
+        margin: 50px auto 0;
+    }
+    #pricing ul li button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    footer section.top {
+        padding: 70px;
+    }
+    footer section.top h4 {
+        font-size: 30px;
+        width: 350px;
+        margin: 0 auto 50px;
+    }
+    footer section.top a.register_button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    footer section.bottom {
+        padding: 10px 0;
+    }
+    footer section.bottom div {
+        width: 100px;
+    }
+    footer section.bottom ul {
+        gap: 10px;
+    }
+    footer section.bottom ul li a {
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 480px) {
+    #spotlight_container header h1 {
+        width: 150px;
+    }
+    #spotlight_container header div a {
+        font-size: 13px;
+    }
+    #spotlight_container #spotlight h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 1.4cm;
+    }
+    #spotlight_container #spotlight p {
+        font-size: 12px;
+        width: 350px;
+        margin: 0 auto 50px;
+    }
+    #spotlight_container #spotlight div.spotlight_middle a {
+        height: 45px;
+        width: 155px;
+        font-size: 12px;
+    }
+    #spotlight_container
+        #spotlight
+        div.spotlight_middle
+        div.spotlight_middle_right {
+        right: 45px;
+        width: 70px;
+        top: -16px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        left: 33px;
+        top: -50px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+        left: 31px;
+        top: 46px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        right: 60px;
+        top: -3px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 120px;
+        top: 95px;
+    }
+    #startup h4 {
+        font-size: 23px;
+        margin-bottom: 50px;
+    }
+    #startup h3 {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+    #startup ul {
+        margin: 0 auto 60px;
+    }
+    #startup ul li {
+        padding: 15px;
+    }
+    #social {
+        padding: 50px 0;
+    }
+    #social section.social_container h4 {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+    #social section.social_container ul li {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+    #social section.social_container div.posts div.post {
+        margin-bottom: 20px;
+    }
+    #social section.social_container a.register_button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    #pricing h4 {
+        font-size: 23px;
+    }
+    #pricing ul {
+        gap: 20px;
+        flex-direction: column;
+    }
+    #pricing ul li {
+        padding: 20px;
+    }
+    #pricing ul li h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #pricing ul li p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    #pricing ul li h2 {
+        font-size: 40px;
+        margin: 20px 0 15px 0;
+    }
+    #pricing ul li h2 span {
+        font-size: 15px;
+    }
+    #pricing ul li div.details div.tick {
+        margin-right: 5px;
+        width: 15px;
+    }
+    #pricing ul li div.details p {
+        font-size: 15px;
+    }
+    #pricing ul li button {
+        margin: 50px auto 0;
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    footer section.top {
+        padding: 70px;
+    }
+    footer section.top h4 {
+        font-size: 30px;
+        width: 350px;
+        margin: 0 auto 50px;
+    }
+    footer section.top a.register_button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    footer section.bottom {
+        padding: 10px 0;
+    }
+    footer section.bottom div {
+        width: 100px;
+    }
+    footer section.bottom ul {
+        gap: 10px;
+    }
+    footer section.bottom ul li a {
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 360px) {
+    #spotlight_container header h1 {
+        width: 100px;
+    }
+    #spotlight_container header div a {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    #spotlight_container header div a.register_button {
+        padding: 5px 15px;
+    }
+    #spotlight_container #spotlight h4 {
+        line-height: 1.1cm;
+    }
+    #spotlight_container #spotlight p {
+        font-size: 10px;
+        width: 75%;
+    }
+    #spotlight_container #spotlight div.spotlight_middle a {
+        height: 40px;
+        width: 125px;
+        font-size: 10px;
+    }
+    #spotlight_container #spotlight div.spotlight_middle a div {
+        width: 15px;
+    }
+    #spotlight_container
+        #spotlight
+        div.spotlight_middle
+        div.spotlight_middle_right {
+        right: 20px;
+        width: 50px;
+        top: -6px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom {
+        padding-bottom: 130px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div {
+        width: 155px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div img {
+        height: 35px;
+        width: 155px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.twitter {
+        left: 17px;
+        top: -50px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.pintrest {
+        left: 17px;
+        top: 20px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.facebook {
+        right: 7px;
+        top: -15px;
+    }
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 162px;
+        top: 55px;
+    }
+    #tab {
+        padding: 40px 0;
+    }
+    #tab h4 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    #tab div.tab_center {
+        margin-bottom: 40px;
+    }
+    #tab div.tab_center div.quote {
+        margin: 0px;
+        width: 50px;
+    }
+    #tab div.tab_center div.tab_middle {
+        padding: 20px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar {
+        padding: 5px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar div.searchbar_logo {
+        width: 50px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar p {
+        font-size: 10px;
+    }
+    #tab div.tab_center div.tab_middle div.tab_searchbar div.searchbar_icon {
+        width: 8px;
+    }
+    #tab span {
+        font-size: 10px;
+        line-height: 0.4cm;
+        width: 80%;
+    }
+    #startup {
+        padding: 40px 0;
+    }
+    #startup h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #startup h3 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    #startup ul {
+        margin: 0 auto;
+    }
+    #startup ul li {
+        padding: 10px;
+    }
+    #social {
+        padding: 40px 0;
+    }
+    #social section.social_container h4 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    #social section.social_container ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+    #social section.social_container ul li {
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+    }
+    #social section.social_container div.posts div.post {
+        margin-bottom: 10px;
+    }
+    #social section.social_container a.register_button {
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+    #pricing {
+        padding: 40px 0;
+    }
+    #pricing h4 {
+        font-size: 20px;
+    }
+    #pricing ul {
+        gap: 10px;
+        flex-direction: column;
+    }
+    #pricing ul li {
+        padding: 20px;
+        text-align: center;
+    }
+    #pricing ul li h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    #pricing ul li p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    #pricing ul li h2 {
+        font-size: 35px;
+        margin: 10px 0 10px 0;
+    }
+    #pricing ul li h2 span {
+        font-size: 15px;
+    }
+    #pricing ul li div.details div.tick {
+        margin-right: 5px;
+        width: 15px;
+    }
+    #pricing ul li div.details {
+        margin-bottom: 3px;
+    }
+    #pricing ul li div.details p {
+        font-size: 15px;
+    }
+    #pricing ul li button {
+        margin: 50px auto 0;
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    footer section.top {
+        padding: 40px 0;
+    }
+    footer section.top h4 {
+        font-size: 20px;
+        width: 65%;
+        margin: 0 auto 30px;
+    }
+    footer section.top a.register_button {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+    footer section.bottom {
+        padding: 10px 0;
+    }
+    footer section.bottom div {
+        width: 100px;
+    }
+    footer section.bottom ul {
+        gap: 5px;
+    }
+    footer section.bottom ul li a {
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 320px) {
+    #spotlight_container #spotlight div.spotlight_bottom div.dribble {
+        left: 127px;
+        top: 55px;
+    }
+}
